@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+<link rel="stylesheet"  href="D:\htmlcssjs\link.css">
+</head>
+
+<body>
+    <div class="container">
+        <table border="1" id="userTable">
+            <tr>
+                <th class="th-style">User-ID</th>
+                <th class="th-style">Name</th>
+                <th class="th-style">First-Name</th>
+                <th class="th-style">Last-Name</th>
+                <th class="th-style">DOB</th>
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Kusuma Siddila</td>
+                <td>Kusuma</td>
+                <td>Siddila</td>
+                <td>1997</td>
+
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>William Hens</td>
+                <td>William</td>
+                <td>Hens</td>
+                <td>2000</td>
+
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Jhon Stark</td>
+                <td>Jhon</td>
+                <td>Stark</td>
+                <td>1990</td>
+
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Dhoni</td>
+                <td>Mahendra</td>
+                <td>singh</td>
+                <td>1987</td>
+
+            </tr>
+        </table>
+        <form class="form">
+            <input type="text" id="tableInput" onkeyup="myFunction()" placeholder="Search..">
+        </form>
+    </div>
+<script >
+function myFunction() {
+    
+    var input, filter, table, tr, td, i, textValue;
+    input = document.getElementById("tableInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("userTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+            textValue = td.textContent || td.innerText;
+            if (textValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+        }
+    }
+}
+</script>
+</body>
+
+
+</html>

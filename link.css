@@ -1,0 +1,44 @@
+.container {
+    background-image: url("https://pngimage.net/wp-content/uploads/2018/05/dark-blue-background-png-5.png");
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}
+.form {
+    margin-top: 15px;
+    border-color: gray;
+    border-radius: 20px;
+}
+#tableInput {
+    color: blue;
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 50%;
+    font-size: 14px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+#userTable {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+}
+
+.th-style {
+    color: red ;
+    font-size: 18px  ;
+    text-align: center;
+    padding: 12px;
+}
+
+
+#userTable td {
+    text-align: center;
+    padding: 12px;
+    color: white;
+}
+#userTable tr {
+    border-bottom: 1px solid #ddd;
+}
